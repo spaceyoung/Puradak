@@ -1,0 +1,34 @@
+@charset "UFT-8";
+
+/******************************
+              MAIN
+******************************/
+.store .map{
+    width: 100%; height: 700px;
+    border: 1px solid #221e1f;
+}
+.store .map .store-info{
+    padding: 20px 25px;
+    border: 1px solid #999; border-radius: 3px;
+    background-color: #fff;
+}
+.store .map .store-info::after{content: "";
+    width: 14px; height: 14px;
+    box-sizing: content-box;
+    border-top: 1px solid #999; border-right: 1px solid #999;
+    background-color: #fff;
+    position: absolute; left: 50%; bottom: -7px;
+    transform: translate(-50%, 0) rotate(135deg);
+}
+.store .map .store-info .store-name{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600; font-size: 1.8rem; color: #333;
+}
+.store .map .store-info .store-info-list{font-size: 1.4rem;}
+.store .map .store-info .store-info-close{
+    width: 20px; height: 20px;
+    position: absolute; right: 2%; top: 5%;
+    cursor: pointer;
+}
+.store .map .store-info .store-info-close span{font-weight: 700; font-size: 2rem;}

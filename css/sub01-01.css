@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/******************************
+              MAIN
+******************************/
+/* -------------------- MAIN COMMON -------------------- */
+.article{padding: 200px 0;}
+
+
+/* -------------------- INTRO -------------------- */
+.intro{
+    width: 100%; height: 600px;
+    background: linear-gradient( 90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0) ), url(../img/sub01-01-intro.jpg) no-repeat center / cover;
+    position: relative;
+    transition: all .3s;
+}
+.intro .contents-txt .contents-tit,
+.intro .contents-txt .contents-desc{color: #fff;}
+
+
+/* -------------------- KEYWORD -------------------- */
+.keyword .contents-txt{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.keyword .keyword-list{
+    display: flex; justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    transition: all .3s;
+}
+.keyword .keyword-item{
+    width: 27%;
+    text-align: center;
+    position: relative;
+    transition: all .3s;
+}
+.keyword .keyword-item::before{content: "";
+    display: block;
+    width: 100%;
+    margin-bottom: 30px; padding-bottom: 100%;
+    background-repeat: no-repeat; background-position: center; background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
+    transition: all .3s;
+}
+.keyword .keyword-item:nth-child(1)::before{background-image: url(../img/sub01-01-keyword01.jpg);}
+.keyword .keyword-item:nth-child(2)::before{background-image: url(../img/sub01-01-keyword02.jpg);}
+.keyword .keyword-item:nth-child(3)::before{background-image: url(../img/sub01-01-keyword03.jpg);}
+.keyword .keyword-item::after{content: "";
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #221e1f;
+    position: absolute; left: 15px; top: -15px; z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
+    transition: all .3s;
+}
+.keyword .keyword-item .keyword-tit{
+    margin-bottom: 10px;
+    font: 400 2.4rem / 1.6 'PuradakGentleGothicR', Roboto, "돋움", dotum, AppleGothic, sans-serif; letter-spacing: -1.5px; color: #bc955c;
+    transition: all .3s;
+}
+.keyword .keyword-item .keyword-desc{font-size: 1.7rem;}
+
+
+/* -------------------- RECIPE -------------------- */
+.recipe{
+    width: 100%; height: 800px;
+    background: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .4) ), url(../img/sub01-01-recipe.jpg) no-repeat center / cover;
+    transition: all .3s;
+}
+.recipe .contents-txt{width: 700px;}
+.recipe .contents-txt .contents-tit{
+    margin-bottom: 40px;
+    color: #fff;
+}
+.recipe .contents-txt .contents-sub-tit{color: rgba(255, 255, 255, .95);}
+.recipe .contents-txt .contents-desc{color: rgba(255, 255, 255, .85);}
+.recipe .contents-txt p:nth-of-type(2){margin-bottom: 26px;}
+
+
+/* -------------------- CONCEPT -------------------- */
+.concept .contents-txt{
+    margin-bottom: 85px;
+    text-align: center;
+    transition: all .3s;
+}
+.concept .concept-list{
+    display: flex; justify-content: center; align-items: center; gap: 10%;
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+.concept .concept-item .concept-img img{
+    height: 380px;
+    transition: all .3s;
+}
+.concept .concept-caption{
+    display: block;
+    font-weight: 500; font-size: 1.7rem; text-align: center; color: #333;
+    transition: all .3s;
+}
+
+
+/* -------------------- MOOD -------------------- */
+.mood{background: url(../img/sub01-01-mood-bg.jpg) no-repeat center / cover;}
+.mood .inner{display: flex; justify-content: space-between; align-items: center;}
+.mood .contents-txt{width: 40%;}
+.mood .contents-txt .contents-tit{color: #fff;}
+.mood .contents-txt .contents-desc{color: rgba(255, 255, 255, .85)}
+.mood .swiper-container{
+    order: -1;
+    width: 50%;
+    transition: all .3s;
+}
+.mood .moodSwiper .swiper-slide{
+    width: 100%; height: 450px;
+    transition: all .3s;
+}
+.mood .moodSwiper .mood-img{
+    display: flex; justify-content: center; align-items: center;
+    width: 100%; height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 85%);
+    transition: all .3s;
+}
+.mood .moodSwiper .mood-img img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+
+/* -------------------- OUTRO -------------------- */
+.outro{padding-bottom: 100px;}
+.outro .contents-txt{text-align: center;}
+.outro .contents-txt::before{content: "";
+    display: block;
+    width: 1px; height: 30px;
+    margin: 0 auto 40px auto;
+    background-color: #111;
+}
+.outro .contents-txt .contents-tit{margin-bottom: 0;}
+
+
+/******************************
+      max-width: 1280px;
+******************************/
+@media all and ( max-width: 1280px ){
+    /******************************
+                  MAIN
+    ******************************/
+    /* -------------------- MAIN COMMON -------------------- */
+    .article{padding: 180px 0;}
+
+    /* -------------------- INTRO -------------------- */
+    .intro .contents-txt{width: 55%;}
+    .intro .contents-txt .contents-desc span{display: inline;}
+    .intro .contents-txt .contents-desc span::after{content: " ";
+        display: inline;
+    }
+
+    /* -------------------- KEYWORD -------------------- */
+    .keyword .contents-txt{margin-bottom: 95px;}
+    .keyword .keyword-list{width: 92%;}
+    .keyword .keyword-item::after{left: 10px; top: -10px;}
+    .keyword .keyword-item .keyword-desc{font-size: 1.6rem;}
+
+    /* -------------------- RECIPE -------------------- */
+    .recipe{height: 750px;}
+    .recipe .contents-txt{width: 60%; min-width: 500px;}
+
+    /* -------------------- CONCEPT -------------------- */
+    .concept .contents-txt{margin-bottom: 80px;}
+    .concept .concept-item .concept-img img{height: 350px;}
+
+    /* -------------------- MOOD -------------------- */
+    .mood .moodSwiper .swiper-slide{height: 400px;}
+
+    /* -------------------- OUTRO -------------------- */
+    .outro {padding-bottom: 90px;}
+}
+
+
+/******************************
+      max-width: 1024px;
+******************************/
+@media all and ( max-width: 1024px ){
+    /*--------------------
+          main - S
+    --------------------*/
+    /*----- main common -----*/
+    .article{padding: 170px 0;}
+
+    /* -------------------- INTRO -------------------- */
+    .intro{height: 550px;}
+    .intro .contents-txt{width: 66%;}
+
+    /* -------------------- KEYWORD -------------------- */
+    .keyword .contents-txt{margin-bottom: 85px;}
+    .keyword .keyword-list{width: 100%;}
+    .keyword .keyword-item{width: 28%;}
+    .keyword .keyword-item::before{margin-bottom: 25px;}
+    .keyword .keyword-item .keyword-tit{font-size: 2.2rem;}
+
+    /* -------------------- RECIPE -------------------- */
+    .recipe{height: 700px;}
+    .recipe .contents-txt{width: 60%;}
+    .recipe .contents-txt .contents-tit{margin-bottom: 35px;}
+    .recipe .contents-txt p:nth-of-type(2){margin-bottom: 24px;}
+
+    /* -------------------- CONCEPT -------------------- */
+    .concept .contents-txt{margin-bottom: 75px;}
+    .concept .concept-list{justify-content: space-around; gap: 0;}
+    .concept .concept-item .concept-img img{height: 280px;}
+    .concept .concept-caption{font-size: 1.6rem;}
+
+    /* -------------------- MOOD -------------------- */
+    .mood .moodSwiper .swiper-slide{height: 350px;}
+
+    /* -------------------- OUTRO -------------------- */
+    .outro {padding-bottom: 85px;}
+}
+
+
+/******************************
+      max-width: 768px;
+******************************/
+@media all and ( max-width: 768px ){
+    /******************************
+                  MAIN
+    ******************************/
+    /* -------------------- MAIN COMMON -------------------- */
+    .article{padding: 160px 0;}
+
+    /* -------------------- INTRO -------------------- */
+    .intro{
+        height: 500px;
+        background-image: linear-gradient( 90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .3) ), url(../img/sub01-01-intro.jpg);
+    }
+    .intro .contents-txt{width: 75%;}
+
+    /* -------------------- KEYWORD -------------------- */
+    .keyword .contents-txt{margin-bottom: 80px;}
+    .keyword .keyword-list{
+        flex-direction: column; gap: 100px;
+        position: relative;
+    }
+    .keyword .keyword-item{width: 45%;}
+    .keyword .keyword-item:nth-child(2){position: absolute; right: 0; top: 25%;}
+    .keyword .keyword-item .keyword-tit{font-size: 2.1rem;}
+    .keyword .keyword-item .keyword-desc{font-size: 1.5rem;}
+
+    /* -------------------- RECIPE -------------------- */
+    .recipe{height: auto;}
+    .recipe .contents-txt{width: 100%; min-width: 0;}
+    .recipe .contents-txt .contents-tit{margin-bottom: 30px;}
+    .recipe .contents-txt p:nth-of-type(2){margin-bottom: 24px;}
+
+    /* -------------------- CONCEPT -------------------- */
+    .concept .contents-txt{margin-bottom: 70px;}
+    .concept .concept-list{margin-bottom: 15px;}
+    .concept .concept-item .concept-img img{height: 240px;}
+    .concept .concept-caption{font-size: 1.5rem;}
+
+    /* -------------------- MOOD -------------------- */
+    .mood .inner{flex-direction: column; gap: 40px;}
+    .mood .contents-txt,
+    .mood .swiper-container{width: 90%;}
+
+    /* -------------------- OUTRO -------------------- */
+    .outro {padding-bottom: 80px;}
+}
+
+
+/******************************
+      max-width: 640px;
+******************************/
+@media all and ( max-width: 640px ){
+    /******************************
+                  MAIN
+    ******************************/
+    /* -------------------- MAIN COMMON -------------------- */
+    .article{padding: 140px 0;}
+
+    /* -------------------- INTRO -------------------- */
+    .intro{
+        height: auto;
+        background-image: linear-gradient( 90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5) ), url(../img/sub01-01-intro.jpg);
+    }
+    .intro .contents-txt{width: 100%;}
+
+    /* -------------------- KEYWORD -------------------- */
+    .keyword .contents-txt{margin-bottom: 75px;}
+    .keyword .keyword-list{gap: 80px;}
+    .keyword .keyword-item{width: 46%;}
+    .keyword .keyword-item .keyword-tit{font-size: 2rem;}
+
+    /* -------------------- CONCEPT -------------------- */
+    .concept .contents-txt{margin-bottom: 65px;}
+    .concept .concept-list{flex-direction: column; gap: 20px;}
+    .concept .concept-item .concept-img img{height: 280px}
+
+    /* -------------------- MOOD -------------------- */
+    .mood .contents-txt,
+    .mood .swiper-container{width: 100%;}
+
+    /* -------------------- OUTRO -------------------- */
+    .outro {padding-bottom: 70px;}
+}
+
+
+/******************************
+      max-width: 480px;
+******************************/
+@media all and ( max-width: 480px ){
+    /******************************
+                  MAIN
+    ******************************/
+    /* -------------------- MAIN COMMON -------------------- */
+    .article{padding: 120px 0;}
+
+    /* -------------------- KEYWORD -------------------- */
+    .keyword .contents-txt{margin-bottom: 70px;}
+    .keyword .keyword-list{
+        flex-direction: column; align-items: center;
+        position: static;
+    }
+    .keyword .keyword-item{width: 80%;}
+    .keyword .keyword-item:nth-child(2){position: relative;}
+
+    /* -------------------- CONCEPT -------------------- */
+    .concept .contents-txt{margin-bottom: 60px;}
+    .concept .concept-item .concept-img img{height: 240px}
+    .concept .concept-caption{font-size: 1.4rem;}
+
+    /* -------------------- MOOD -------------------- */
+    .mood .moodSwiper .swiper-slide{height: 250px;}
+
+    /* -------------------- OUTRO -------------------- */
+    .outro {padding-bottom: 60px;}
+}
