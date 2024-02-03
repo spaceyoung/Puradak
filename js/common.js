@@ -1,28 +1,30 @@
 // gnb 호버 이펙트 및 로고 색상 변경
-const header = document.querySelector(".header");
-const gnb = document.querySelector(".gnb");
-const logo = document.querySelector(".logo > a > img");
+const header = document.querySelector('.header');
+const gnb = document.querySelector('.gnb');
+const logo = document.querySelector('.logo > a > img');
 
-gnb.addEventListener("mouseover", () => {
-  header.classList.add("on");
-  logo.src = "./img/logo-k.png";
+gnb.addEventListener('mouseover', () => {
+  header.classList.add('on');
+  if (logo.src === './img/logo.png') logo.src = './img/logo-k.png'
+  else logo.src = '../img/logo-k.png';
 });
 
-header.addEventListener("mouseout", () => {
-  header.classList.remove("on");
-  logo.src = "./img/logo.png";
+header.addEventListener('mouseout', () => {
+  header.classList.remove('on');
+  if (logo.src === './img/logo-k.png') logo.src = './img/logo.png'
+  else logo.src = '../img/logo.png';
 });
 
 
 // 올메뉴 햄버거 버튼
-const allMenuOpenButton = document.querySelector(".allmenu-btn");
-const allMenuContainer = document.querySelector(".allmenu-container");
-const allMenuCloseButton = document.querySelector(".allmenu-close-btn");
-const allMenuHeaders = document.querySelectorAll(".allmenu-depth1-header");
+const allMenuOpenButton = document.querySelector('.allmenu-btn');
+const allMenuContainer = document.querySelector('.allmenu-container');
+const allMenuCloseButton = document.querySelector('.allmenu-close-btn');
+const allMenuHeaders = document.querySelectorAll('.allmenu-depth1-header');
 
-allMenuOpenButton.addEventListener("click", () => {
-  document.documentElement.classList.add("hidden");
-  allMenuContainer.classList.add("on");
+allMenuOpenButton.addEventListener('click', () => {
+  document.documentElement.classList.add('hidden');
+  allMenuContainer.classList.add('on');
 });
 
 allMenuCloseButton.addEventListener('click', () => {
