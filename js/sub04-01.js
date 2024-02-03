@@ -1,6 +1,6 @@
 // JSON 매장 데이터 불러와서 매장 지도 생성
 async function init() {
-  const response = await fetch('/json/store-location.json');
+  const response = await fetch('../json/store-location.json');
   const stores = await response.json();
 
   // 기준 위도, 경도
