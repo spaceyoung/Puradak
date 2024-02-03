@@ -8,9 +8,9 @@ async function init() {
   const standardLng = `${stores[0].longitude}`;
   
   // 지도 삽입할 위치 및 지도 기본 옵션 설정
-  const storeSection = document.querySelector(".store > .inner");
-  const mapContainer = document.createElement("div");
-  mapContainer.classList.add("map");
+  const storeSection = document.querySelector('.store > .inner');
+  const mapContainer = document.createElement('div');
+  mapContainer.classList.add('map');
   storeSection.append(mapContainer);
 
 
@@ -49,11 +49,11 @@ async function init() {
       // 커스텀 오버레이에 들어갈 매장 정보 내용 생성
       // 커스텀 오버레이 콘텐츠 생성 및 추가
       const storeInfo = document.createElement('div');
-      storeInfo.classList.add("store-info");
+      storeInfo.classList.add('store-info');
   
       // 매장 이름 생성 및 추가
       const storeName = document.createElement('strong');
-      storeName.classList.add("store-name");
+      storeName.classList.add('store-name');
       storeInfo.append(storeName);
       storeName.textContent = `${store.name}`;
   
@@ -63,23 +63,23 @@ async function init() {
       const storeContact = document.createElement('li');
       const storeHours = document.createElement('li');
   
-      storeInfoList.classList.add("store-info-list");
-      storeAddress.classList.add("store-address");
-      storeContact.classList.add("store-contact");
-      storeHours.classList.add("store-hours");
+      storeInfoList.classList.add('store-info-list');
+      storeAddress.classList.add('store-address');
+      storeContact.classList.add('store-contact');
+      storeHours.classList.add('store-hours');
   
       storeInfo.append(storeInfoList);
       storeInfoList.append(storeAddress, storeContact, storeHours);
   
       storeAddress.textContent = `주소 : ${store.address}`;
       storeContact.textContent = `연락처 : ${store.contact}`;
-      storeHours.textContent = `영업시간 : ${store["business hours"]}`;
+      storeHours.textContent = `영업시간 : ${store['business hours']}`;
   
       // 커스텀 오버레이 닫기 버튼 생성 및 추가
       const storeInfoClose = document.createElement('button');
       const closeIcon = document.createElement('span');
-      storeInfoClose.classList.add("store-info-close");
-      closeIcon.classList.add("material-symbols-outlined");
+      storeInfoClose.classList.add('store-info-close');
+      closeIcon.classList.add('material-symbols-outlined');
       storeInfo.append(storeInfoClose);
       storeInfoClose.append(closeIcon);
       closeIcon.textContent = `close`;

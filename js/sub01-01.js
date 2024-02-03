@@ -1,5 +1,5 @@
 // mood 아티클 swiper
-new Swiper(".moodSwiper", {
+new Swiper('.moodSwiper', {
   slidesPerView: 1,
   loop: true,
   autoplay: {
