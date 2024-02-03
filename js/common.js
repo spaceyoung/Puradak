@@ -5,12 +5,12 @@ const logo = document.querySelector(".logo > a > img");
 
 gnb.addEventListener("mouseover", () => {
   header.classList.add("on");
-  logo.src = "/puradak/img/logo-k.png";
+  logo.src = "./img/logo-k.png";
 });
 
 header.addEventListener("mouseout", () => {
   header.classList.remove("on");
-  logo.src = "/puradak/img/logo.png";
+  logo.src = "./img/logo.png";
 });
 
 
