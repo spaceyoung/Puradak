@@ -11,6 +11,10 @@
 > 해당 프로젝트를 통해 **JavaScript 문법**을 주도적으로 익히고, **DOM 접근**과 **비동기 통신**을 이해하고 활용할 수 있게 되었습니다.
 <br>
 
+### 🔎 배포 사이트 주소
+> https://spaceyoung.github.io/puradak/
+<br>
+
 ### 🛠 사용 기술
 > <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
 <br>
