@@ -3,15 +3,15 @@ const header = document.querySelector('.header');
 const gnb = document.querySelector('.gnb');
 const logo = document.querySelector('.logo > a > img');
 
-gnb.addEventListener('mouseover', () => {
+header.addEventListener('mouseover', () => {
   header.classList.add('on');
-  if (logo.src === 'https://spaceyoung.github.io/img/logo.png') logo.src = './img/logo-k.png'
+  if (logo.src === 'https://spaceyoung.github.io/puradak/img/logo.png') logo.src = './img/logo-k.png';
   else logo.src = '../img/logo-k.png';
 });
 
 header.addEventListener('mouseout', () => {
   header.classList.remove('on');
-  if (logo.src === 'https://spaceyoung.github.io/img/logo-k.png') logo.src = './img/logo.png'
+  if (logo.src === 'https://spaceyoung.github.io/puradak/img/logo-k.png') logo.src = './img/logo.png';
   else logo.src = '../img/logo.png';
 });
 
