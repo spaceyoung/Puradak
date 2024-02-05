@@ -1,21 +1,3 @@
-// gnb 호버 이펙트 및 로고 색상 변경
-const header = document.querySelector('.header');
-const gnb = document.querySelector('.gnb');
-const logo = document.querySelector('.logo > a > img');
-
-header.addEventListener('mouseover', () => {
-  header.classList.add('on');
-  if (logo.src === 'https://spaceyoung.github.io/puradak/img/logo.png') logo.src = './img/logo-k.png';
-  else logo.src = '../img/logo-k.png';
-});
-
-header.addEventListener('mouseout', () => {
-  header.classList.remove('on');
-  if (logo.src === 'https://spaceyoung.github.io/puradak/img/logo-k.png') logo.src = './img/logo.png';
-  else logo.src = '../img/logo.png';
-});
-
-
 // 올메뉴 햄버거 버튼
 const allMenuOpenButton = document.querySelector('.allmenu-btn');
 const allMenuContainer = document.querySelector('.allmenu-container');
