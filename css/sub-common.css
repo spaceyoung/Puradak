@@ -52,7 +52,9 @@ body{line-height: 1.6;}
     display: flex; justify-content: center; align-items: center;
     width: 100%; height: 400px;
     padding-top: 100px;
-    background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(../img/sub01-01-visual.png) no-repeat center / cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transition: all .3s;
 }
 .visual .visual-tit{font: 400 4.8rem / 1.6 'PuradakGentleGothicR', Roboto, "돋움", dotum, AppleGothic, sans-serif; text-align: center; letter-spacing: -1.5px; color: #fff;}
