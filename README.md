@@ -71,7 +71,7 @@
 | <kbd><img src="https://github.com/spaceyoung/puradak/assets/154400292/c31e30a5-7d55-42a2-a880-4306a541f4a3" /></kbd> | <kbd><img src="https://github.com/spaceyoung/puradak/assets/154400292/e1fe5c0c-c06f-434b-a81e-c645a1ace16e" /></kbd> |
 <br>
 
-- **[매장 안내 서브 페이지(Sub-04]](https://spaceyoung.github.io/puradak/sub/sub04-01.html)**
+- **[매장 안내 서브 페이지(Sub-04)](https://spaceyoung.github.io/puradak/sub/sub04-01.html)**
 
   - **Kakao map API**를 활용한 **푸라닭 각 지점 매장 안내 지도**
  
