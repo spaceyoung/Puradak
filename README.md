@@ -25,7 +25,7 @@
 ## 🔎 개요
 푸라닭의 공식 웹사이트 디자인이 고급스러움을 강조하는 브랜드 이미지를 충분히 전달하고 있지 않다고 판단하여 기획했습니다. **JavaScript를 학습하며 직접 적용**해 본 첫 프로젝트로, 기능적 측면에서는 **동적 기능 구현과 단순 반복 마크업 감소, 지도 API 활용**을 중점에 두고 작업을 진행했습니다.
 
-해당 프로젝트를 통해 **JavaScript 문법**을 주도적으로 익히며 전반적인 지식을 습득했습니다. 또한, **DOM 요소 접근**과 **비동기 통신을 통한 API 활용**을 이해하고 직접 적용할 수 있게 되었습니다.
+해당 프로젝트를 통해 **JavaScript 문법**을 주도적으로 익히며 전반적인 지식을 습득했습니다. 또한, **DOM 요소 접근**과 **비동기 통신을 이용한 API 활용**을 이해하고 직접 적용할 수 있게 되었습니다.
 <br>
 <br>
 <br>
@@ -62,10 +62,10 @@
 - **[메인 페이지](https://spaceyoung.github.io/puradak/)**
 
   - 마우스 이벤트를 활용한 Hover 효과, Hamburger 메뉴 클릭 이벤트 등의 **동적 상호작용** 구현
-  - **querySelector를 통한 DOM 접근**과 **Event listener**를 활용하여 모바일 화면에서의 Navigation drawer **아코디언 메뉴 토글** 구현
+  - **querySelector를 통한 DOM 접근**과 **Event listener**를 활용하여 모바일 화면에서의 Navigation drawer **아코디언 메뉴** 구현
   - **스크롤 이벤트**를 활용한 퀵 메뉴 **Top 버튼, Visual Section 스킵 버튼**
 
-| 아코디언 메뉴 토글 | 퀵 메뉴 Top 버튼 | Visual Sections 스킵 버튼 |
+| 아코디언 메뉴 | 퀵 메뉴 Top 버튼 | Visual Sections 스킵 버튼 |
 |---|---|---|
 | <kbd><img src="https://github.com/spaceyoung/puradak/assets/154400292/d66ccdb5-2c99-4e03-8645-44be3346a8ed" width="200"/></kbd> | <kbd><img src="https://github.com/spaceyoung/puradak/assets/154400292/c1282201-0c6b-4816-b8fa-0834e7e05065" /></kbd> | <kbd><img src="https://github.com/spaceyoung/puradak/assets/154400292/003a99f1-6412-43dc-ad65-5baafca7a163" /></kbd> |
 <br>
