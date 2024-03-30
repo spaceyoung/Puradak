@@ -21,12 +21,10 @@
 [https://spaceyoung.github.io/puradak/](https://spaceyoung.github.io/puradak/)
 <br>
 <br>
-<br>
 ## 🔎 개요
 푸라닭의 공식 웹사이트 디자인이 고급스러움을 강조하는 브랜드 이미지를 충분히 전달하고 있지 않다고 판단하여 기획했습니다. **JavaScript를 학습하며 직접 적용**해 본 첫 프로젝트로, 기능적 측면에서는 **동적 기능 구현과 단순 반복 마크업 감소, 지도 API 활용**을 중점에 두고 작업을 진행했습니다.
 
 해당 프로젝트를 통해 **JavaScript 문법**을 주도적으로 익히며 전반적인 지식을 습득했습니다. 또한, **DOM 요소 접근**과 **비동기 통신을 이용한 API 활용**을 이해하고 직접 적용할 수 있게 되었습니다.
-<br>
 <br>
 <br>
 ## 🛠 사용 기술
@@ -46,7 +44,6 @@
     - Visual Studio Code
 ```
 <br>
-<br>
 
 ## 🖥 구현 페이지
 - **[메인 페이지](https://spaceyoung.github.io/puradak/)**
@@ -55,7 +52,6 @@
   - 브랜드 소개 : [푸라닭 소개](https://spaceyoung.github.io/puradak/sub/sub01-01.html)
   - 메뉴 안내 : [치킨 메뉴](https://spaceyoung.github.io/puradak/sub/sub02-01.html) / [사이드 메뉴](https://spaceyoung.github.io/puradak/sub/sub02-02.html) / [푸레스트](https://spaceyoung.github.io/puradak/sub/sub02-03.html) / [페이커리](https://spaceyoung.github.io/puradak/sub/sub02-04.html) / [P-피자](https://spaceyoung.github.io/puradak/sub/sub02-05.html)
   - 매장 안내 : [매장 안내](https://spaceyoung.github.io/puradak/sub/sub04-01.html)
-<br>
 <br>
 
 ## ✨ JavaScript 활용 구현 기능
